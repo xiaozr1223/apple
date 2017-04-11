@@ -1,0 +1,14 @@
+{
+	"index.html": {
+		"resources": [
+			"img/s_small.jpg",
+			"css/index.css",
+			"img/iphone7_small.png",
+			"img/a_small.jpg",
+			"css/iconfont.css",
+			"iconfont/iconfont.woff",
+			"img/w_small.jpg",
+			"img/i_small.jpg"
+		]
+	}
+}

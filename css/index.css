@@ -1,0 +1,594 @@
+/*
+* @Author: Administrator
+* @Date:   2017-03-29 14:07:34
+* @Last Modified by:   Administrator
+* @Last Modified time: 2017-03-30 03:07:11
+*/
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-size: 12px;
+}
+a{
+	text-decoration: none;
+	color: #FFFFFF;
+}
+header{
+	width: 100%;
+	height: 44px;
+	background: #444;
+	color: #A8A8AA;
+}
+header .con{
+	width: 1000px;
+	height: 100%;
+	margin: 0 auto;
+	line-height: 44px;
+}
+header .con span{
+	display: block;
+	float: right;
+}
+
+
+.banner{
+	width: 100%;
+	height: 540px;
+}
+
+.banner nav{
+	width: 100%;
+	height: 44px;
+	background: rgba(0, 0, 0, 0.8);
+	position: absolute;
+	top: 44px;
+	z-index: 5;
+}
+.banner nav .con1{
+	width: 1000px;
+	height: 100%;
+	margin: 0 auto;
+	line-height: 44px;
+	text-align: justify;
+}
+.banner nav .con1 a{
+	display: inline-block;
+	font-size: 14px;
+	font-weight: 200;
+}
+
+.banner nav .con1:after{
+	content: "";
+	display: inline-block;
+	width: 100%;	
+}
+.banner nav .con1 a:hover{
+	color: #A5A5A5;
+}
+
+.banner nav .con2{
+	display: none;
+}
+
+
+.banner .wheel_img{
+	width: 100%;
+	height: 100%;
+}
+.banner .wheel_img a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-image: url('../img/iphone7_large.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-color: #CC3341;
+	background-position: center 230px;
+}
+.banner .word{
+	width: 100%;
+	height: 50%;
+}
+.banner .word div{
+	width: 48px;
+	height: 22px;
+	font-size: 10px;
+	border-radius: 4px;
+	border: 1px solid #fff;
+	line-height: 22px;
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 66px;
+}
+.banner .word h4{
+	font-size: 32px;
+	font-weight: 500;
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 6px;
+}
+.banner .word p{
+	font-size: 40px;
+	text-align: center;
+}
+
+.banner .left,.banner .right{
+	width: 20%;
+	height: 540px;
+	padding: 20px;
+	box-sizing: border-box;
+	position: absolute;
+	top: 44px;
+	right: 0;
+}
+.banner .left{
+	left: 0;
+}
+.banner .button{
+	width: 64px;
+	height: 64px;
+	line-height: 64px;
+	text-align: center;
+	border-radius: 50%;
+	background: rgba(180, 180, 180, 0.2);
+	font-size: 26px;
+	color: rgba(0, 0, 0, 0.4);
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin: auto 0;
+	opacity: 0;
+	transition: opacity 1s ease;
+}
+
+.banner .right .button{
+	right: 20px;
+}
+
+.banner .btn:hover div{
+	opacity: 1;
+}
+.banner .button:hover{
+	background: rgba(180, 180, 180, 0.1);
+}
+
+.banner .hengg{
+	width: 200px;
+	height: 2px;
+	margin: 0 auto;
+	margin-top: -30px;
+}
+.banner .hengg div{
+	width: 50px;
+	height: 2px;
+	background: rgba(0, 0, 0, 0.1);
+	margin-left: 10px;
+	float: left;
+}
+.banner .hengg div:nth-child(2){
+	background: rgba(0, 0, 0, 0.3);
+}
+
+.box{
+	width: 100%;
+	height: 200px;
+}
+
+.box div{
+	width: 25%;
+	height: 200px;
+	box-sizing: border-box;
+	border-top: 2px solid #fff;
+	border-right: 2px solid #fff;
+	float: left;
+}
+
+.box div:last-child{
+	border-right: 0;
+}
+
+
+.box div:nth-child(1) a{
+	width: 100%;
+	height: 200px;
+	display: block;
+	background-image: url('../img/w_large.jpg');
+	background-size: 360px 200px;
+	background-position: center;
+}
+
+.box div:nth-child(2) a{
+	width: 100%;
+	height: 200px;
+	display: block;
+	background-image: url('../img/i_large.jpg');
+	background-size: 360px 200px;
+	background-position: center;
+}
+.box div:nth-child(3) a{
+	width: 100%;
+	height: 200px;
+	display: block;
+	background-image: url('../img/a_large.jpg');
+	background-size: 360px 200px;
+	background-position: center;
+}
+.box div:nth-child(4) a{
+	width: 100%;
+	height: 200px;
+	display: block;
+	background-image: url('../img/s_large.jpg');
+	background-size: 360px 200px;
+	background-position: center;
+}
+footer{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	background: #F2F2F2;
+	border-top: 2px solid #fff;
+}
+
+footer .con{
+	width: 980px;
+	padding: 0 20px;
+	height: auto;
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+
+footer .con p{
+	width: 100%;
+	height: auto;
+	line-height: 20px;
+	padding: 17px 0 11px;
+	border-bottom: 1px solid #D6D6D6;
+	color: #888;
+}
+
+
+footer .center{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	padding-top: 20px;
+	color: #888;
+}
+
+footer .center div{
+	width: 20%;
+	height: 245px;
+	float: left;
+}
+
+footer .center div h3{
+	color: #333333;
+}
+footer .center div a{
+	display: block;
+	color: #555555;
+	margin-top: 6px;
+}
+
+footer .center div a:hover{
+	text-decoration: underline;
+}
+
+.bottom{
+	color: #555555;
+}
+.bottom .b1 a{
+	color: #0070C9;
+}
+
+.bottom .b1{
+	margin-bottom: 8px;
+}
+.bottom div:nth-child(1){
+	width: 100%;
+	padding: 10px 0px;
+	border-bottom: 1px solid #D6D6D6;
+}
+
+.bottom a:hover{
+	text-decoration: underline;
+}
+.bottom div span{
+	display: block;
+	float: left;
+}
+.bottom div ul{
+	float: left;
+	margin-left: 30px;
+}
+.bottom div ul li{
+	width: 50px;
+	height: 17px;
+	padding-right: 11px;
+	margin-right: 12px;
+	border-right: 1px solid #D6D6D6;
+	float: left;
+}
+.bottom div ul li:last-child{
+	border-right: 0;
+}
+.bottom div ul li a{
+	color: #555555;
+}
+.bottom .p1{
+	margin-bottom: 30px;
+	box-sizing: border-box;
+	padding: 30px 0;
+	border: 0;
+}
+
+.bottom .p1 a{
+	color: #999999;
+}
+
+.center1{
+	display: none;
+}
+
+
+
+
+
+
+@media screen and (max-width: 1000px) {
+
+header .con{
+	width: 100%;
+	padding: 0 20px;
+	box-sizing: border-box;
+}
+.banner nav .con1{
+	width: 100%;
+	padding: 0 20px;
+	box-sizing: border-box;
+}
+
+.banner{
+	height: 500px;
+}
+.banner .left,.banner .right{
+	height: 500px;
+}
+
+.banner .word h4{
+	font-size: 24px;
+	font-weight: 600;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 6px;
+}
+.banner .word p{
+	font-size: 30px;
+}
+
+.banner .wheel_img a{
+	background-image: url('../img/iphone7_medium.png');
+	background-position: center 200px;
+}
+
+
+.box div{
+	width: 50%;
+}
+
+.box div:nth-child(2){
+	border-right: 0;
+}
+
+
+
+
+.box div:nth-child(1) a{
+	background-image: url('../img/w_medium.jpg');
+	background-size: 640px 200px;
+}
+
+.box div:nth-child(2) a{
+	background-image: url('../img/i_medium.jpg');
+	background-size: 640px 200px;
+}
+.box div:nth-child(3) a{
+	background-image: url('../img/a_medium.jpg');
+	background-size: 640px 200px;
+}
+.box div:nth-child(4) a{
+	background-image: url('../img/s_medium.jpg');
+	background-size: 640px 200px;
+}
+
+
+
+footer .con{
+	width: 100%;
+	padding: 0 20px;
+	box-sizing: border-box;
+}
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 770px) {
+.banner nav .con1{
+	display: none;
+}	
+.banner nav .con2{
+	display: block;
+}
+
+.banner nav .con2{
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	line-height: 44px;
+	text-align: justify;
+	padding: 0 20px;
+	box-sizing: border-box;
+}
+.banner nav .con2 a{
+	display: inline-block;
+	font-size: 14px;
+	font-weight: 200;
+}
+
+.banner nav .con2:after{
+	content: "";
+	display: inline-block;
+	width: 100%;	
+}
+.banner nav .con2 a:hover{
+	color: #A5A5A5;
+}
+
+
+.banner{
+	height: 465px;
+}
+.banner .left,.banner .right{
+	height: 465px;
+}
+
+
+
+
+
+.banner .wheel_img a{
+	background-image: url('../img/iphone7_small.png');
+	background-position: center 180px;
+}
+
+.banner .word{
+	width: 100%;
+	height: 50%;
+}
+.banner .word div{
+	width: 46px;
+	height: 22px;
+	font-size: 8px;
+	line-height: 22px;
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 46px;
+}
+.banner .word h4{
+	font-size: 18px;
+	font-weight: 600;
+	text-align: center;
+	margin-top: 14px;
+	margin-bottom: 6px;
+}
+.banner .word p{
+	font-size: 24px;
+}
+
+
+.box div{
+	width: 100%;
+	border-right: 0;
+}
+
+.box div:nth-child(1) a{
+	background-image: url('../img/w_small.jpg');
+	background-size: 736px 200px;
+}
+
+.box div:nth-child(2) a{
+	background-image: url('../img/i_small.jpg');
+	background-size: 736px 200px;
+}
+.box div:nth-child(3) a{
+	background-image: url('../img/a_small.jpg');
+	background-size: 736px 200px;
+}
+.box div:nth-child(4) a{
+	background-image: url('../img/s_small.jpg');
+	background-size: 736px 200px;
+}
+
+footer .center{
+	display: none;
+}
+
+
+.bottom div span{
+	float: none;
+}
+
+.bottom div ul{
+	margin-left: 0;
+	margin-top: 10px;
+}
+
+
+
+
+footer .center1{
+	margin-top: 20px;
+}
+footer .center1 div h3{
+	width: 100%;
+	height: 38px;
+	line-height: 38px;
+	border-bottom: 1px solid #D6D6D6;
+	color: #333333;
+	font-weight: 400;
+}
+
+footer .center1 div h3 span{
+	display: block;
+	float: right;
+	margin-right: 10px;
+}
+
+
+.center1{
+	display: block;
+}
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 400px) {
+.banner .wheel_img a{
+	background-image: url('../img/iphone7_small.png');
+	background-position: center 180px;
+	background-size: 309px 337px;
+}
+}
